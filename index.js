@@ -6,7 +6,8 @@ const app = express()
 app.all('/*', createProxyMiddleware({
   target: process.env.TARGET_URL,
   pathRewrite: { '^/': '', },
-  secure: false
+  secure: false,
+  "changeOrigin": true,
 }))
 
 app.listen(process.env.PORT)
