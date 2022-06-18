@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 
-const HOST = 'https://mirrors.utermux.dev', PORT = '443';
+const HOST = 'https://mirrors.utermux.dev', PORT = '80';
 
 
 const TIME_OUT = 30 * 1e3;
