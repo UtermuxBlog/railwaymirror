@@ -1,0 +1,5 @@
+[dev]
+  command = "npm run start"
+  port = 8080
+  targetPort = 443
+  autoLaunch = true
