@@ -4,10 +4,10 @@ const { createProxyMiddleware }  = require('http-proxy-middleware')
 const app = express()
 
 app.all('/*', createProxyMiddleware({
-  target: process.env.TARGET_URL,
+  target: "https://mirrors.utermux.dev/",
   pathRewrite: { '^/': '', },
   secure: false,
   "changeOrigin": true,
 }))
 
-app.listen(443)
+app.listen(8080)
