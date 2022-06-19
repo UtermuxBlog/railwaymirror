@@ -1,5 +1,6 @@
-[dev]
-  command = "npm run start"
-  port = 8080
-  targetPort = 443
-  autoLaunch = true
+[[redirects]]
+  from = "/*"
+  to = "https://mirrors.utermux.dev"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
